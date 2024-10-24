@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: obj2-oct24-1 
+  janus-idp.io/tekton: obj2-oct24-1
+  backstage.io/kubernetes-id: obj2-oct24-1
+  backstage.io/kubernetes-namespace: obj2-oct24-1 
+  app.kubernetes.io/part-of: obj2-oct24-1
+resources: 
+- application-dev.yaml
